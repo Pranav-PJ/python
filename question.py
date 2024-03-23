@@ -9,7 +9,6 @@ def is_prime(n):
 def express(n,m):
     s=math.sqrt((2*n-m)/(2*n+m))
     p=m/4*s
-
     if (p==int(p)) and (is_prime(p)):
         return p
     else:
@@ -20,4 +19,4 @@ def check_range(r):
         for m in range(1,2*n):
             p=express(n,m)
             if p!=0:
-                print("m:",m,"n:",n,"p:",p,)
+                print("m:",m,"n:",n,"p:",p)
